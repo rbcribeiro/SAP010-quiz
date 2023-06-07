@@ -6,10 +6,9 @@ var nome = null;
 window.addEventListener('load', function() {
 while(nome == null){
   nome = prompt("Olá! Qual é o seu nome?");
+document.getElementById('nome').innerHTML = "Vamos jogar, " + nome + "!";
 }
 })
-
-document.getElementById('nome').innerHTML = "Vamos jogar, " + nome + "!";
 
 function comidasTipicas() {
   closeAllPages()
