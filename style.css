@@ -33,7 +33,7 @@ body{
   text-align: center;
   width: 700px;
   border: 10px solid rgb(0, 0, 0);
-  background-image: url('/imagens/fundo.avif');
+  background-image: url('./imagens/fundo.avif');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
