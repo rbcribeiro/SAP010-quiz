@@ -3,7 +3,7 @@ html {
   background-color: #2d2c2c;
   font-size: 25px;
   color: white;
-  background-image: url('/imagens/fundo2.jpg');
+  background-image: url('./imagens/fundo2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
