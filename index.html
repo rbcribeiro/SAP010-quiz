@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/png" href="./imagens/icon.png" />
+  <title>Você Sabe ??</title>
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+  <div class="fundo"><h1>
+    <p id="nome">Vamos Jogar</p>
+  </h1>
+
+  <h2>Escolha um tema:<br>
+
+  <button class="botao" onclick="comidasTipicas()">Comidas Típicas</button><br>
+
+  <button class="botao" onclick="multiplicacao()">Multiplicação</button><br>
+
+  <button class="botao" onclick="bebidas()">Bebidas</button>
+  <br>
+  </h2>
+  
+  <div class="comidasTipicas" id="comidasTipicas" style="display:none">
+    <h3>Comidas Típicas</h3>
+<img src="/imagens/comidameme.jpg" class="gato">
+      <br><br>
+
+      <img src="/imagens/linha.jpg" class="linha">
+      <img src="/imagens/feijoada.webp"><br>
+
+
+    <p class="perguntas">1. Feijoada é uma comida:</p>
+    <input type="radio" id="brasilera" name="grupo_feijoada" value="brasileira">
+    <label for="brasileira">Brasileira</label>
+    <input type="radio" id="portuguesa" name="grupo_feijoada" value="portuguesa">
+    <label for="portuguesa">Portuguesa</label>
+    <input type="radio" id="argentina" name="grupo_feijoada" value="argentina">
+    <label for="argentina">Argentina</label>
+    <br><br>
+
+     <img src="/imagens/linha.jpg" class="linha">
+     <img src="/imagens/sushi.jpg"> <br>
+
+    <p class="perguntas">2. Sushi é uma comida:</p>
+    <input type="radio" id="coreana" name="grupo_sushi" value="coreana">
+    <label for="coreana">Coreana</label>
+    <input type="radio" id="chinesa" name="grupo_sushi" value="chinesa">
+    <label for="chinesa">Chinesa</label>
+    <input type="radio" id="japonesa" name="grupo_sushi" value="japonesa">
+    <label for="japonesa">Japonesa</label>
+    <br><br>
+
+    <img src="/imagens/linha.jpg" class="linha">
+    <img src="/imagens/guacamole.jpg"> <br>
+
+
+    <p class="perguntas">3. Guacamole é uma comida:</p>
+    <input type="radio" id="chilena" name="grupo_guacamole" value="chilena">
+    <label for="chilena">Chilena</label>
+    <input type="radio" id="mexicana" name="grupo_guacamole" value="mexicana">
+    <label for="mexicana">Mexicana</label>
+    <input type="radio" id="paraguaia" name="grupo_guacamole" value="paraguaia">
+    <label for="paraguaia">Paraguaia</label>
+    <br><br>
+
+     <img src="/imagens/linha.jpg" class="linha">
+     <img src="/imagens/hamburguer.jpg"> <br> 
+    
+    <p class="perguntas">4. Hambúrguer é uma comida:</p>
+    <input type="radio" id="estaduniense" name="grupo_hamburguer" value="estaduniense">
+    <label for="estaduniense">Estaduniense</label>
+    <input type="radio" id="canadense" name="grupo_hamburguer" value="canadense">
+    <label for="canadense">Canadense</label>
+    <input type="radio" id="italiana" name="grupo_hamburguer" value="italiana">
+    <label for="italiana">Italiana</label>
+    <br><br>
+
+      <img src="/imagens/linha.jpg" class="linha">
+      <img src="/imagens/risoto.jpg"> <br>
+    
+    <p class="perguntas">5. Risoto é uma comida:</p>
+    <input type="radio" id="francesa" name="grupo_risoto" value="francesa">
+    <label for="francesa">Francesa</label>
+    <input type="radio" id="italiana1" name="grupo_risoto" value="italiana1">
+    <label for="italiana1">Italiana</label>
+    <input type="radio" id="espanhola" name="grupo_risoto" value="espanhola">
+    <label for="espanhola">Espanhola</label>
+    <br><br>
+
+    <img src="/imagens/linha.jpg" class="linha">
+      <img src="/imagens/esfiha.webp"> <br>
+
+    <p class="perguntas">6. Esfiha é uma comida:</p>
+    <input type="radio" id="libanesa" name="grupo_esfiha" value="libanesa">
+    <label for="libanesa">Libanesa</label>
+    <input type="radio" id="turca" name="grupo_esfiha" value="turca">
+    <label for="turca">Turca</label>
+    <input type="radio" id="marroquina" name="grupo_esfiha" value="marroquina">
+    <label for="marroquina">Marroquina</label>
+    <br><br>
+    
+    <button class="botao" onclick="enviarComidasTipicas()">Enviar</button>
+
+    <p class="resultadoComidasTipicas" id="resultadoComidasTipicas"></p>
+  </div>
+  
+  <div class="multiplicacao" id="multiplicacao" style="display:none">
+    
+    <h3>Multiplicação</h3>
+    <img src="/imagens/nazareth.jpg" class="meme">
+    
+    <p class="perguntas">1. O resultado da multiplicação: 9 x 3 é:</p>
+    <input type="radio" id="27" name="grupo_um" value="27">
+    <label for="27">27</label>
+    <input type="radio" id="25" name="grupo_um" value="25">
+    <label for="25">25</label>
+    <input type="radio" id="29" name="grupo_um" value="29">
+    <label for="29">29</label>
+    <br><br>
+
+    <p class="perguntas">2. O resultado da multiplicação: 7 x 7 é</p>
+    <input type="radio" id="49" name="grupo_dois" value="49">
+    <label for="49">49</label>
+    <input type="radio" id="44" name="grupo_dois" value="44">
+    <label for="44">44</label>
+    <input type="radio" id="42" name="grupo_dois" value="42">
+    <label for="42">42</label>
+    <br><br>
+
+    <p class="perguntas">3. O resultado da multiplicação: 4 x 6 é</p>
+    <input type="radio" id="20" name="grupo_tres" value="20">
+    <label for="20">20</label>
+    <input type="radio" id="24" name="grupo_tres" value="24">
+    <label for="24">24</label>
+    <input type="radio" id="26" name="grupo_tres" value="26">
+    <label for="26">26</label>
+    <br><br>
+
+    <p class="perguntas">4. O resultado da multiplicação: 2 x 8 é</p>
+    <input type="radio" id="14" name="grupo_quatro" value="14">
+    <label for="14">14</label>
+    <input type="radio" id="18" name="grupo_quatro" value="18">
+    <label for="18">18</label>
+    <input type="radio" id="16" name="grupo_quatro" value="16">
+    <label for="16">16</label>
+    <br><br>
+
+
+    <p class="perguntas">5. O resultado da multiplicação: 5 x 9 é</p>
+    <input type="radio" id="45" name="grupo_cinco" value="45">
+    <label for="45">45</label>
+    <input type="radio" id="40" name="grupo_cinco" value="40">
+    <label for="40">40</label>
+    <input type="radio" id="35" name="grupo_cinco" value="35">
+    <label for="35">35</label>
+    <br><br>
+
+    <p class="perguntas">6. O resultado da multiplicação: 6 x 9 é</p>
+    <input type="radio" id="51" name="grupo_seis" value="51">
+    <label for="51">51</label>
+    <input type="radio" id="52" name="grupo_seis" value="52">
+    <label for="52">52</label>
+    <input type="radio" id="54" name="grupo_seis" value="54">
+    <label for="54">54</label>
+    <br><br>
+    
+    <button class="botao" onclick="enviarMultiplicacao()">Enviar</button>
+
+    <p class="resultadoMultiplicacao" id="resultadoMultiplicacao"></p>
+  </div>  
+
+  <div class="bebidas" id="bebidas" style="display:none">
+    <h3>Bebidas</h3>
+
+    
+    <img src="/imagens/linha.jpg" class="linha">
+    <img src="/imagens/tequila.jpg"><br>
+    
+    <p class="perguntas">1. A bebida Tequila é típica de qual país:</p>
+    <input type="radio" id="mexico" name="grupo_a" value="mexico">
+    <label for="mexico">México</labels>
+    <input type="radio" id="chile" name="grupo_a" value="chile">
+    <label for="chile">Chile</label>
+    <input type="radio" id="cuba" name="grupo_a" value="cuba">
+    <label for="cuba">Cuba</label>
+    <br><br>
+  
+      <img src="/imagens/linha.jpg" class="linha">
+      <img src="/imagens/saque.jpg"><br>
+      
+    <p class="perguntas">2. A bebida Saquê é típica de qual país:</p>
+    <input type="radio" id="china" name="grupo_b" value="china">
+    <label for="china">China</label>
+    <input type="radio" id="japao" name="grupo_b" value="japao">
+    <label for="japao">Japão</label>
+    <input type="radio" id="indonesia" name="grupo_b" value="indonesia">
+    <label for="indonesia">Indonésia</label>
+    <br><br>
+
+      
+    <img src="/imagens/linha.jpg" class="linha">
+    <img src="/imagens/gin.jpg"><br>
+      
+    <p class="perguntas">3. A bebida Gin é típica de qual país:</p>
+    <input type="radio" id="inglaterra" name="grupo_c" value="inglaterra">
+    <label for="inglaterra">Inglaterra</label>
+    <input type="radio" id="holanda" name="grupo_c" value="holanda">
+    <label for="holanda">Holanda</label>
+    <input type="radio" id="italia" name="grupo_c" value="italia">
+    <label for="italia">Itália</label>
+    <br><br>
+
+    <img src="/imagens/linha.jpg" class="linha">
+    <img src="/imagens/vodka.jpg"><br>
+      
+    <p class="perguntas">4. A bebida Vodka é típica de qual país:</p>
+    <input type="radio" id="australia" name="grupo_d" value="australia">
+    <label for="australia">Austrália</label>
+    <input type="radio" id="suica" name="grupo_d" value="suica">
+    <label for="suica">Suíça</label>
+    <input type="radio" id="russia" name="grupo_d" value="russia">
+    <label for="russia">Rússia</label>
+    <br><br>
+
+
+    <img src="/imagens/linha.jpg" class="linha">
+    <img src="/imagens/cerveja.webp"><br>
+      
+    <p class="perguntas">5. A Cerveja é típica de qual país:</p>
+    <input type="radio" id="brasil" name="grupo_e" value="brasil">
+    <label for="brasil">Brasil</label>
+    <input type="radio" id="colombia" name="grupo_e" value="colombia">
+    <label for="colombia">Colombia</label>
+    <input type="radio" id="alemanha" name="grupo_e" value="alemanha">
+    <label for="alemanha">Alemanha</label>
+    <br><br>
+
+      
+    <img src="/imagens/linha.jpg" class="linha">
+    <img src="/imagens/porto.jpg"><br>
+      
+    <p class="perguntas">6. O Vinho do Porto é típica de qual país:</p>
+    <input type="radio" id="polonia" name="grupo_f" value="polonia">
+    <label for="polonia">Polônia</label>
+    <input type="radio" id="portugal" name="grupo_f" value="portugal">
+    <label for="portugal">Portugal</label>
+    <input type="radio" id="espanha" name="grupo_f" value="espanha">
+    <label for="espanha">Espanha</label>
+    <br><br>
+    
+    <button class="botao" onclick="enviarBebidas()">Enviar</button>
+
+    <p class="resultadoBebidas" id="resultadoBebidas"></p>
+  </div>
+      <footer>
+    Desenvolvido por Barbara Oltramari e <a href="https://www.linkedin.com/in/rbcribeiro/" target="_blank">Renata Ribeiro</a>
+  </footer>
+  <script src="script.js"></script>
+  </div>
+</body>
+
+</html>

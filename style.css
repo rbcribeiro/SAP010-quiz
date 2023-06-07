@@ -1,0 +1,76 @@
+html {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #2d2c2c;
+  font-size: 25px;
+  color: white;
+  background-image: url('/imagens/fundo2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+img{
+  width: 500px;
+  height: 300px;
+}
+.linha{
+  height:20px;  
+  width: 500px;
+
+}
+
+body{
+  width: 98%;
+  display: flex;
+  justify-content: center;
+}
+
+.gato, .meme{
+  height:250px;  
+  width: 350px;
+}
+
+.fundo{
+  text-align: center;
+  width: 700px;
+  border: 10px solid rgb(0, 0, 0);
+  background-image: url('/imagens/fundo.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1{
+  font-size: 50px;
+  color: yellow;
+}
+
+h2{
+  color: goldenrod;
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 35px;
+}
+
+h3{
+  color: goldenrod;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.perguntas{
+  color: #ce5ac8;
+  font-weight: bold;
+}
+
+.botao{
+  background-color: #20415a;
+  border-radius: 20%;
+  color: white;
+  font-size: 20px;
+}
+footer{
+  background-color: darkgray;
+  color: #0e0958;
+    font-size: 20px;
+    font-family: cursive;
+}
