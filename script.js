@@ -4,11 +4,14 @@ var exibindoBebidas = false;
 var nome = null;
 
 window.addEventListener('load', function() {
-while(nome == null){
-  nome = prompt("Olá! Qual é o seu nome?");
-document.getElementById('nome').innerHTML = "Vamos jogar, " + nome + "!";
-}
-})
+  let nome = prompt("Olá! Qual é o seu nome?");
+  
+  if (nome === null || nome.trim() === "") {
+    nome = "Visitante";
+  }
+  
+  document.getElementById('nome').innerHTML = "Vamos jogar, " + nome + "!";
+});
 
 function comidasTipicas() {
   closeAllPages()
